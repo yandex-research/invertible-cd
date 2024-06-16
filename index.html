@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Invertible Consistency Distillation for Text-Guided Image Editing in Around 7 Steps</title>
+  <title>Invertible Consistency Distillation for <br> Text-Guided Image Editing in Around 7 Steps</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Invertible Consistency Distillation for
+            <h1 class="title is-1 publication-title">Invertible Consistency Distillation for <br>
               Text-Guided Image Editing in Around 7 Steps</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -152,7 +152,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Diffusion distillation represents a highly promising direction for achieving faithful text-to-image generation in a few sampling steps.
+  However, despite recent successes, existing distilled models still do not provide the full spectrum of diffusion abilities, such as real image inversion, which enables many precise image manipulation methods.
+  This work aims to enrich distilled text-to-image diffusion models with the ability to effectively encode real images into their latent space.
+  To this end, we introduce <i>invertible Consistency Distillation</i> (iCD), a generalized consistency distillation framework that facilitates both high-quality image synthesis and accurate image encoding in only 3-4 inference steps. 
+  Though the inversion problem for text-to-image diffusion models gets exacerbated by high classifier-free guidance scales, we notice that <i>dynamic guidance</i> significantly reduces reconstruction errors without noticeable degradation in generation performance.
+  As a result, we demonstrate that iCD equipped with dynamic guidance may serve as a highly effective tool for zero-shot text-guided image editing, competing with more expensive state-of-the-art alternatives.
           </p>
         </div>
       </div>
