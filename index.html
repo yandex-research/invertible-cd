@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Invertible Consistency Distillation for <br> Text-Guided Image Editing in Around 7 Steps</title>
+  <title>Invertible Distillation for <br> Text-Guided Image Editing in Around 7 Steps</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,20 +52,20 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Invertible Consistency Distillation for <br>
-              Text-Guided Image Editing in Around 7 Steps</h1>
+            <h2 class="title is-2 publication-title">Invertible Consistency Distillation for <br>
+              Text-Guided Image Editing in Around 7 Steps</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Nikita Starodubcev</a><sup>1, 2</sup>,</span> -->
-                Nikita Starodubcev<sup>1, 2</sup>,</span>
+                    <a href="https://scholar.google.com/citations?user=o6pRm_gAAAAJ&hl" target="_blank">Nikita Starodubcev</a><sup>1, 2</sup>,</span>
                 <span class="author-block">
-                  Mikhail Khoroshikh<sup>1, 2</sup>,</span>
+                    <a href="https://scholar.google.com/citations?user=BWLDIa8AAAAJ&hl" target="_blank">Mikhail Khoroshikh</a><sup>1, 2</sup>,</span>
                   <span class="author-block">
-                    Artem Babenko<sup>1</sup>,
+                    <a href="https://scholar.google.ru/citations?user=2Kv3JP0AAAAJ&hl" target="_blank">Artem Babenko</a><sup>1</sup>,
                   </span>
                   <span class="author-block">
-                    Dmitry Baranchuk<sup>1</sup>
+                    <a href="https://scholar.google.com/citations?hl=ru&user=NiPmk8oAAAAJ" target="_blank">Dmitry Baranchuk</a><sup>1</sup>
                   </span>
                   </div>
 
@@ -128,23 +128,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -156,7 +139,7 @@
             Diffusion distillation represents a highly promising direction for achieving faithful text-to-image generation in a few sampling steps.
   However, despite recent successes, existing distilled models still do not provide the full spectrum of diffusion abilities, such as real image inversion, which enables many precise image manipulation methods.
   This work aims to enrich distilled text-to-image diffusion models with the ability to effectively encode real images into their latent space.
-  To this end, we introduce <i>invertible Consistency Distillation</i> (iCD), a generalized consistency distillation framework that facilitates both high-quality image synthesis and accurate image encoding in only 3-4 inference steps. 
+  To this end, we introduce <i>invertible Consistency Distillation</i> (iCD), a generalized consistency distillation framework that facilitates both high-quality image synthesis and accurate image encoding in only 3-4 inference steps.
   Though the inversion problem for text-to-image diffusion models gets exacerbated by high classifier-free guidance scales, we notice that <i>dynamic guidance</i> significantly reduces reconstruction errors without noticeable degradation in generation performance.
   As a result, we demonstrate that iCD equipped with dynamic guidance may serve as a highly effective tool for zero-shot text-guided image editing, competing with more expensive state-of-the-art alternatives.
           </p>
@@ -173,109 +156,163 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+       <div class="item" style="width: 100%;">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/2_img.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Generation results using the proposed 4-step invertible Consistency Distillation
         </h2>
       </div>
-      <div class="item">
+        <div class="item" style="width: 100%;">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/1_img.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Generation results using the proposed 4-step invertible Consistency Distillation
         </h2>
       </div>
-      <div class="item">
+        <div class="item" style="width: 100%;">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/3_img.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+          Generation results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
+        <div class="item" style="width: 100%;">
+        <!-- Your image here -->
+        <img src="static/images/4_img.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Generation results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
+        <div class="item" style="width: 100%;">
+        <!-- Your image here -->
+        <img src="static/images/5_img.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Generation results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
+        <div class="item" style="width: 100%;">
+        <!-- Your image here -->
+        <img src="static/images/6_img.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Generation results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
   </div>
 </div>
 </div>
 </section>
+
 <!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
+  <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item" style="width: 100%;">
+        <!-- Your image here -->
+        <img src="static/images/1_img_ed.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Editing results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
+        <div class="item" style="width: 100%;">
+        <!-- Your image here -->
+        <img src="static/images/2_img_ed.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Editing results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
+        <div class="item" style="width: 100%;">
+        <!-- Your image here -->
+        <img src="static/images/3_img_ed.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Editing results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
+        <div class="item" style="width: 100%;">
+        <!-- Your image here -->
+        <img src="static/images/4_img_ed.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Editing results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
+                <div class="item" style="width: 100%;">
+        <!-- Your image here -->
+        <img src="static/images/5_img_ed.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Editing results using the proposed 4-step invertible Consistency Distillation
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+  <section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            <br> <b>1. Invertible Consistency Distillation</b> </br> <p>We propose a framework that enables sampling
+          from noise to an image (as in classical distillation), and also from an image to noise.
+          To this end, we distill two models (<i>forward</i> and <i>reverse</i>) splitting the solution interval into
+          segments and using Consistency Distillation on each of them separately.
+          We note this as multi boundary Consistency Distillation.
+         The <i>forward</i> model (fCD<sup>m</sup>) steps from an image to noise,
+          while the reverse (CD<sup>m</sup>) - from noise to an image. In practice, we use m=3 and m=4 boundaries. </p>
+            <img src="static/images/method_iCD.jpg" alt="MY ALT TEXT"/> <p></p>
+             <br> <b>2. Dynamic classifier-free guidance </b> <p>
+          <p>To enhance the inversion quality, we investigate the recently proposed dynamic CFG from the inversion perspective.
+         We reveal that it can enhance reconstruction without significantly compromising quality.
+           We consider a step function for dynamic guidance, controlled by the parameter τ.
+          In practice, τ=0.7 and τ=0.8 are suitable for accurate image editing.</p>
+          <img src="static/images/method_dynamic_cfg.jpg" alt="MY ALT TEXT"/>
+          <img src="static/images/method_qual.jpg" alt="MY ALT TEXT"/>
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+  <section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental results for image editing</h2>
+        <div class="content has-text-justified">
+          <p>
+            <img src="static/images/exps_quantitatve_sd1.5.jpg" alt="MY ALT TEXT"/> <p>
+            We conduct a human evaluation comparing our approach with state-of-the-art baselines.
+            We observe that the proposed iCD comparable to the baseline approaches in most cases. Moreover, sometimes it can even
+            outperform them while being multiple times faster.
+          </p>
         </div>
       </div>
     </div>
   </div>
-</section> -->
-<!-- End video carousel -->
+</section>
 
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+    <section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative comparisons under the SD1.5 model</h2>
+        <div class="content has-text-justified">
+          <p>
+            <img src="static/images/app_qualitative_editing.jpg" alt="MY ALT TEXT"/> <p></p>
+          <h2 class="title is-3">Qualitative comparisons under the SDXL model</h2>
+          <img src="static/images/exps_qualitative_sdxl.jpg" alt="MY ALT TEXT"/> <p>
+          </p>
+        </div>
       </div>
     </div>
-  </section> -->
-<!--End paper poster -->
+  </div>
+</section>
+
 
 
 <!--BibTex citation -->
@@ -307,7 +344,7 @@
 </footer>
 
 <!-- Statcounter tracking code -->
-  
+
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
