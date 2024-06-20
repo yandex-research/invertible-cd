@@ -1,5 +1,8 @@
 # Invertible Consistency Distillation for <br> Text-Guided Image Editing in Around 7 Steps
-### [Project Page](https://yandex-research.github.io/invertible-cd/) | [Paper](https://arxiv.org)
+
+<a href='https://arxiv.org'><img src='https://img.shields.io/badge/ArXiv-PDF-red'></a> &nbsp; 
+<a href='https://yandex-research.github.io/invertible-cd/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp; 
+
 
 This paper proposes **invertible Consistency Distillation**, enabling
 
@@ -13,12 +16,12 @@ This paper proposes **invertible Consistency Distillation**, enabling
 ## Table of contents
 
 * [Installation](#installation)
-* [Easy-to-run examples](#easy-to-run-examples) (SD1.5)
+* [Easy-to-run examples](#easy-to-run-examples) (iCD-SD1.5)
     * [Generation](#generation-with-sd15)
     * [Editing](#editing-with-sd15)
-* [Easy-to-run examples](running/sdxl) (SDXL)
-* [In-depth generation and editing](running) (SDXL and SD1.5)
-* [Our distillation on MS-COCO dataset](consistency_models_sd) (SDXL and SD1.5)
+* [Easy-to-run examples](running/sdxl) (iCD-SDXL)
+* [In-depth generation and editing](running) (iCD-SDXL and iCD-SD1.5)
+* [iCD training example](training) (iCD-SDXL and iCD-SD1.5)
 * [Citation](#citation)
 
 ## Installation
@@ -28,11 +31,11 @@ This paper proposes **invertible Consistency Distillation**, enabling
 git clone https://github.com/yandex-research/invertible-cd
 
 # Create an environment and install packages
-python3 -m venv icd
-source icd/bin/activate
+conda create -n icd python=3.10 -y 
+conda activate icd
+
 pip3 install -r requirements/req.txt
 ```
-
 We provide the following checkpoints:
 
 1. Guidance distilled diffusion models
