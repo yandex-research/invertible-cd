@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+<!--   <meta name="description" content="invertible Consistency Distillation (iCD), a generalized consistency distillation framework that facilitates both high-quality image synthesis and accurate image encoding in only 3-4 inference steps."> -->
+  <meta property="og:title" content="Invertible Consistency Distillation for
+Text-Guided Image Editing in Around 7 Steps"/>
+  <meta property="og:description" content="Generalized consistency distillation framework that facilitates both high-quality image synthesis and accurate image encoding in 3-4 inference steps."/>
+  <meta property="og:url" content="https://yandex-research.github.io/invertible-cd/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+<!--   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:height" content="630"/> -->
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+<!-- 
+  <meta name="twitter:title" content="Invertible Consistency Distillation for
+Text-Guided Image Editing in Around 7 Steps">
+  <meta name="twitter:description" content="invertible Consistency Distillation (iCD), a generalized consistency distillation framework that facilitates both high-quality image synthesis and accurate image encoding in only 3-4 inference steps.">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -255,18 +255,19 @@
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p>
-            <br> <b>1. Invertible Consistency Distillation</b> </br> <p>We propose a framework that enables sampling
-          from noise to an image (as in classical distillation), and also from an image to noise.
-          To this end, we distill two models (<i>forward</i> and <i>reverse</i>) splitting the solution interval into
-          segments and using Consistency Distillation on each of them separately.
-          We note this as multi boundary Consistency Distillation.
-         The <i>forward</i> model (fCD<sup>m</sup>) steps from an image to noise,
-          while the reverse (CD<sup>m</sup>) - from noise to an image. In practice, we use m=3 and m=4 boundaries. </p>
+            <br> <b>1. Invertible Consistency Distillation</b> </br> <p> We propose a diffusion distillation framework
+          that allows few-step sampling in both directions: from noise to an image and from an image to noise.
+          In more detail, we distill <i>forward</i> and <i>reverse</i> models by splitting the solution interval into
+          segments and running consistency distillation on each segment separately.
+          We refer to this as multi-boundary Consistency Distillation.
+          The <i>forward</i> model (fCD<sup>m</sup>) encodes an image to latent noise,
+          while the reverse model (CD<sup>m</sup>) decodes latent noise to an image.
+          In practice, we use m=3 and m=4 boundaries. </p>
             <img src="static/images/method_iCD.jpg" alt="MY ALT TEXT"/> <p></p>
              <br> <b>2. Dynamic classifier-free guidance </b> <p>
           <p>To enhance the inversion quality, we investigate the recently proposed dynamic CFG from the inversion perspective.
-         We reveal that it can enhance reconstruction without significantly compromising quality.
-           We consider a step function for dynamic guidance, controlled by the parameter τ.
+           We reveal that it can improve reconstruction without significantly compromising quality.
+           We consider a step function for dynamic guidance controlled by the parameter τ.
           In practice, τ=0.7 and τ=0.8 are suitable for accurate image editing.</p>
           <img src="static/images/method_dynamic_cfg.jpg" alt="MY ALT TEXT"/>
           <img src="static/images/method_qual.jpg" alt="MY ALT TEXT"/>
@@ -286,9 +287,9 @@
         <div class="content has-text-justified">
           <p>
             <img src="static/images/exps_quantitatve_sd1.5.jpg" alt="MY ALT TEXT"/> <p>
-            We conduct a human evaluation comparing our approach with state-of-the-art baselines.
-            We observe that the proposed iCD comparable to the baseline approaches in most cases. Moreover, sometimes it can even
-            outperform them while being multiple times faster.
+            We conduct a human evaluation to compare our approach with state-of-the-art baselines.
+            We observe that the proposed iCD is comparable to the baseline approaches in most cases.
+            Moreover, sometimes, it can even outperform them while being multiple times faster.
           </p>
         </div>
       </div>
