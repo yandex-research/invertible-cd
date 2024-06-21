@@ -1,6 +1,6 @@
 # Invertible Consistency Distillation for <br> Text-Guided Image Editing in Around 7 Steps
 
-<a href='https://arxiv.org'><img src='https://img.shields.io/badge/ArXiv-PDF-red'></a> &nbsp; 
+<a href='https://arxiv.org/abs/2406.14539'><img src='https://img.shields.io/badge/ArXiv-PDF-red'></a> &nbsp; 
 <a href='https://yandex-research.github.io/invertible-cd/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp; 
 
 
@@ -245,12 +245,11 @@ or move on to [in-depth examples](running)
 ## Citation
 
 ```bibtex
-@misc{starodubcev2023student,
-      title={Your Student is Better Than Expected: Adaptive Teacher-Student Collaboration for Text-Conditional Diffusion Models}, 
-      author={Nikita Starodubcev and Artem Fedorov and Artem Babenko and Dmitry Baranchuk},
-      year={2023},
-      eprint={2312.10835},
+@misc{starodubcev2024invertible,
+      title={Invertible Consistency Distillation for Text-Guided Image Editing in Around 7 Steps}, 
+      author={Nikita Starodubcev and Mikhail Khoroshikh and Artem Babenko and Dmitry Baranchuk},
+      year={2024},
+      eprint={2406.14539},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
-}
 ```
