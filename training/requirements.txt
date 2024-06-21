@@ -1,0 +1,9 @@
+torch==2.3.0
+accelerate==0.27.2
+torchvision==0.18.0
+transformers==4.37.0 
+tensorboard
+diffusers==0.27.2
+peft==0.8.2
+pandas==2.1.4
+scipy==1.13.1

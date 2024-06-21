@@ -1,0 +1,31 @@
+ACCELERATE_CONFIG="configs/default_config.yaml"
+
+accelerate launch --config_file $ACCELERATE_CONFIG --num_processes=1 --main_process_port 6788 train_icd_sd15_lora.py \
+    --pretrained_teacher_model="runwayml/stable-diffusion-v1-5" \
+    --output_dir="results_icd_sd15" \
+    --mixed_precision=fp16 \
+    --resolution=512 \
+    --lora_rank=64 \
+    --learning_rate=8e-6 --loss_type="huber" --adam_weight_decay=0.0 \
+    --max_train_steps=6000 \
+    --validation_steps=10 \
+    --evaluation_steps=10 \
+    --checkpointing_steps=10 --checkpoints_total_limit=10 \
+    --train_batch_size=8 \
+    --allow_tf32 \
+    --gradient_checkpointing \
+    --gradient_accumulation_steps=1 \
+    --resume_from_checkpoint=latest \
+    --report_to=tensorboard \
+    --seed=453645634 \
+    --coco_path "data" \
+    --num_endpoints 4 \
+    --num_forward_endpoints 4 \
+    --start_forward_timestep 19 \
+    --reverse_preserve_loss_coef 1.5 \
+    --forward_preserve_loss_coef 1.5 \
+    --cfg_distill_teacher_path "pretrained/sd15_cfg_distill.pt" \
+    --embed_guidance \
+    --discrete_w "0,7,11,15,19" \
+    --endpoints "0,259,519,779" \
+    --forward_endpoints "259,519,779,999"
