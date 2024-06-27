@@ -2,7 +2,12 @@
 
 <a href='https://arxiv.org/abs/2406.14539'><img src='https://img.shields.io/badge/ArXiv-PDF-red'></a> &nbsp; 
 <a href='https://yandex-research.github.io/invertible-cd/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp; 
-
+<a href="https://huggingface.co/spaces/dbaranchuk/iCD-image-generation">
+	    <img src='https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Generation-orange' />
+</a>
+<a href="https://huggingface.co/spaces/dbaranchuk/iCD-image-editing">
+	    <img src='https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Editing-orange' />
+</a>
 
 This paper proposes **invertible Consistency Distillation**, enabling
 
@@ -245,11 +250,10 @@ or move on to [in-depth examples](running)
 ## Citation
 
 ```bibtex
-@misc{starodubcev2024invertible,
-      title={Invertible Consistency Distillation for Text-Guided Image Editing in Around 7 Steps}, 
-      author={Nikita Starodubcev and Mikhail Khoroshikh and Artem Babenko and Dmitry Baranchuk},
-      year={2024},
-      eprint={2406.14539},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{starodubcev2024invertible,
+  title={Invertible Consistency Distillation for Text-Guided Image Editing in Around 7 Steps},
+  author={Starodubcev, Nikita and Khoroshikh, Mikhail and Babenko, Artem and Baranchuk, Dmitry},
+  journal={arXiv preprint arXiv:2406.14539},
+  year={2024}
+}
 ```
