@@ -4,10 +4,10 @@
 <a href='https://yandex-research.github.io/invertible-cd/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp; 
 <a href="https://huggingface.co/spaces/dbaranchuk/iCD-image-generation">
 	    <img src='https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Generation-orange' />
-</a>
+</a>&nbsp;
 <a href="https://huggingface.co/spaces/dbaranchuk/iCD-image-editing">
 	    <img src='https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Editing-orange' />
-</a>
+</a>&nbsp;
 
 This paper proposes **invertible Consistency Distillation**, enabling
 
